@@ -201,7 +201,7 @@ const projects = [
 			},
 		],
 		image: winrate,
-		sourceCodeLink:
+		websiteLink:
 			'https://chrome.google.com/webstore/detail/chess-pro/oabpbnkggjfhodegmdoaamjfimfbomna',
 	},
 	{
@@ -218,7 +218,7 @@ const projects = [
 			},
 		],
 		image: portfolio,
-		sourceCodeLink: 'https://nextjs-rosy-phi.vercel.app/',
+		websiteLink: 'https://nextjs-rosy-phi.vercel.app/',
 	},
 	{
 		name: 'Blogger',
