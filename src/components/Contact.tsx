@@ -72,6 +72,8 @@ const Contact = () => {
 				<h3 className={styles.sectionHeadText}>Contact</h3>
 
 				<form
+					// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+					// @ts-ignore
 					ref={formRef}
 					onSubmit={handleSubmit}
 					className='mt-12 flex flex-col gap-8'

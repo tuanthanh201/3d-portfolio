@@ -7,6 +7,8 @@ const SectionWrapper = (Component: React.FC, idName: string) =>
 	function HOC() {
 		return (
 			<motion.section
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+				// @ts-ignore
 				variants={staggerContainer()}
 				initial='hidden'
 				whileInView={'show'}

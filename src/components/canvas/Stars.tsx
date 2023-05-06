@@ -1,17 +1,15 @@
-import { useState, useRef, Suspense } from 'react';
+import { useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 
 import * as random from 'maath/random/dist/maath-random.cjs';
 
-interface StarProps {}
-
-const Stars = (props: StarProps) => {
+const Stars = (props: any) => {
 	const ref = useRef();
 
 	const sphere = random.inSphere(new Float32Array(5000), { radius:1.2 });
 
-	useFrame((state, delta) => {
+	useFrame((_, delta) => {
 		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
 		ref.current.rotation.x -= delta / 10;
