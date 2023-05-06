@@ -7,6 +7,11 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { useRef, useState } from 'react';
 
+const isValidEmail = (email: string): boolean => {
+	const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+	return regex.test(email);
+};
+
 const Contact = () => {
 	const formRef = useRef();
 	const [form, setForm] = useState({
@@ -18,17 +23,26 @@ const Contact = () => {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		const { name, email, message } = form;
+
+		if (
+			name.trim().length === 0 ||
+			!isValidEmail(email) ||
+			message.trim().length === 0
+		)
+			return;
+
 		setLoading(true);
 		emailjs
 			.send(
 				'service_4qfr9gq',
 				'template_bl36yvl',
 				{
-					from_name: form.name,
+					from_name: name,
 					to_name: 'Thanh',
-					from_email: form.email,
+					from_email: email,
 					to_email: 'ngthanh2248@gmail.com',
-					message: form.message,
+					message: message,
 				},
 				'exCyHUCFM4Sz6mW-N'
 			)
@@ -92,7 +106,7 @@ const Contact = () => {
 					<label className='flex flex-col'>
 						<span className='text-white font-medium mb-4'>Your Email</span>
 						<input
-							type='text'
+							type='email'
 							name='email'
 							value={form.email}
 							onChange={handleChange}
