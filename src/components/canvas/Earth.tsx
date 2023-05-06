@@ -28,7 +28,7 @@ const EarthCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
       <ambientLight intensity={0.1} />
-      {/* <ambientLight intensity={10} color='#345ae2' /> */}
+      {/* <ambientLight intensity={5} color='#990000' /> */}
       <ambientLight intensity={10} color='#345ae2' />
       {/* <hemisphereLight intensity={0.7} color='#1a65e8' /> */}
       {/* <spotLight intensity={0.5} position={[0, 0, 100]} /> */}
