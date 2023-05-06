@@ -33,10 +33,6 @@ import nokia from './company/nokia.png';
 import omers from './company/omers.png';
 import singlestore from './company/singlestore.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
-
 import blockbreaker from './projects/blockbreaker.png';
 import blogger from './projects/blogger.jpg';
 import dino from './projects/dino.png';
@@ -78,9 +74,6 @@ export {
 	nokia,
 	omers,
 	singlestore,
-	carrent,
-	jobit,
-	tripguide,
 	blockbreaker,
 	blogger,
 	dino,
