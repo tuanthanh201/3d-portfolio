@@ -24,8 +24,8 @@ const Navbar = () => {
 				>
 					<img src={logo} alt='logo' className='w-9 h-9 object-contain' />
 					<p className='text-white font-bold text-[18px] cursor-pointer flex'>
-						Thanh Nguyen &nbsp;
-						<span className='sm:block hidden'>| BCS at UWaterloo</span>
+						Thanh Nguyen
+						{/* <span className='sm:block hidden'>| BCS at UWaterloo</span> */}
 					</p>
 				</Link>
 				<ul className='list-none hidden sm:flex flex-row gap-10'>
