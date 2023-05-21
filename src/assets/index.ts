@@ -41,6 +41,7 @@ import socialite from './projects/socialite.jpg';
 import winrate from './projects/winrate.jpg';
 import portfolio from './projects/portfolio.png';
 import tomatoes from './projects/tomatoes.png';
+import shirtModels from './projects/shirtmodels.png';
 
 export {
 	logo,
@@ -81,6 +82,7 @@ export {
 	dino,
 	socialite,
 	winrate,
+  shirtModels,
 	portfolio,
 	tomatoes,
 };
